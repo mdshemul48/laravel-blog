@@ -14,7 +14,8 @@ class BlogPostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = BlogPost::all();
+        return $posts;
     }
 
     /**
@@ -46,7 +47,7 @@ class BlogPostController extends Controller
      */
     public function show(BlogPost $blogPost)
     {
-        //
+        return $blogPost;
     }
 
     /**
